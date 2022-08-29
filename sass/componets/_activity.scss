@@ -1,0 +1,36 @@
+/*Чим займається компанія*/
+.activity {
+  padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.activity__list {
+  display: flex;
+}
+
+.activity__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.activity__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.activity__pretitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-bottom: 0;
+  color: var(--secondary-text-color);
+}

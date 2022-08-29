@@ -1,0 +1,74 @@
+body {
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  color: var(--praimery-text-color);
+  background-color: var(--praimery-bkg-color);
+}
+button {
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  color: var(--praimery-text-color);
+  &[rel="noopener noreferrer"] {
+    color: var(--secondary-text-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.icon {
+  fill: var(--praimery-icon-color);
+}
+.icon--moving {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .link:hover &,
+  .link:focus & {
+    fill: var(--accent-color);
+  }
+}
+.icon--white {
+  fill: var(--secondary-icon-color);
+}
+.icon--grey {
+  fill: var(--praimery-text-color);
+}

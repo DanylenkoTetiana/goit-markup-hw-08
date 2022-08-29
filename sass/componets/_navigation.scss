@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  margin-left: 93px;
+}
+.navigation__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.navigation__link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+  &--active {
+    color: var(--accent-color);
+  }
+}
+
+.navigation__emphasis::after {
+  position: absolute;
+  bottom: -1px;
+
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.navigation__emphasis--bigger::after {
+  width: 78px;
+}
