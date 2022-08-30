@@ -61,7 +61,10 @@
 
 .order-form__fild-agreement {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  @include desktop {
+    margin-bottom: 30px;
+  }
 }
 .order-form__agreement-label {
   position: absolute;
@@ -73,9 +76,13 @@
   align-items: center;
   height: 24px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .order-form__quadrate {

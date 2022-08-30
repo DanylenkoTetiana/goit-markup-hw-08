@@ -6,7 +6,7 @@
   }
 }
 .benefits__item {
-  max-width: 450px;
+  max-width: 100%;
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -14,10 +14,10 @@
     }
   }
   @include tablet {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @include desktop {
-    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .benefits__icons {

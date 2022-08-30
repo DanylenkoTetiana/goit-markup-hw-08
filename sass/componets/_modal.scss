@@ -18,8 +18,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
 
   background: var(--praimery-bkg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -27,6 +27,10 @@
   border-radius: 4px;
   .backdrop.is-hidden & {
     opacity: 0;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -54,8 +58,11 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
+  @include desktop {
+    line-height: 1.15;
+  }
 }

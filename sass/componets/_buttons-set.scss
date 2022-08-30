@@ -1,14 +1,23 @@
 .buttons-set {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   column-gap: 8px;
-  row-gap: 15px;
-  align-content: space-between;
-  width: 327px;
-  height: 91px;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-content: space-between;
+    width: 327px;
+    height: 91px;
+  }
 }
 .projects__buttons-set {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-set__button {
