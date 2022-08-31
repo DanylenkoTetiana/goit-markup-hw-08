@@ -1366,14 +1366,20 @@ img {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 100%;
   width: 450px;
   height: 294px;
-  padding: 77px 24px;
+  padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
 }
 .projects__item:hover .projects__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .projects__overlay {
+    padding: 77px 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .projects__overlay {
