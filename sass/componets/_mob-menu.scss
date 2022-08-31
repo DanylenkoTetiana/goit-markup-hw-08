@@ -44,6 +44,9 @@
   letter-spacing: 0.02em;
 
   color: var(--titel-text-color);
+  &--accent {
+    color: var(--accent-color);
+  }
 }
 .mob-menu__close:hover .mob-menu__icon-close,
 .mob-menu__close:focus .mob-menu__icon-close {
@@ -57,11 +60,14 @@
 }
 .mob-menu__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+  @include mobile {
+    font-size: 34px;
+  }
 }
 .mob-menu__mail {
   font-weight: 500;
@@ -82,8 +88,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
-.mob-menu__networks-item {
-}
+
 .mob-menu__link {
   margin-right: 10px;
   font-weight: 500;

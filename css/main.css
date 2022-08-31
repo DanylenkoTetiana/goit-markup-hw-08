@@ -828,6 +828,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--titel-text-color);
 }
+.mob-menu__nav-link--accent {
+  color: var(--accent-color);
+}
 
 .mob-menu__close:hover .mob-menu__icon-close,
 .mob-menu__close:focus .mob-menu__icon-close {
@@ -844,10 +847,15 @@ img {
 
 .mob-menu__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__tel {
+    font-size: 34px;
+  }
 }
 
 .mob-menu__mail {
@@ -1397,10 +1405,15 @@ img {
 
 .projects__text-overlay {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .projects__text-overlay {
+    font-size: 18px;
+  }
 }
 
 .projects__signature {

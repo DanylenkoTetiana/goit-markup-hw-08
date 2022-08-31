@@ -64,10 +64,13 @@
 
 .projects__text-overlay {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  @include mobile {
+    font-size: 18px;
+  }
 }
 .projects__signature {
   padding: 20px 24px;
