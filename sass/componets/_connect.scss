@@ -1,5 +1,11 @@
 .connect {
   margin-bottom: -10px;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+
   @include desktop {
     display: flex;
     align-items: center;

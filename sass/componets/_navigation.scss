@@ -14,9 +14,14 @@
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: 88px;
+
+  @include tablet {
+    display: flex;
+  }
+
   @include desktop {
     margin-left: 93px;
   }

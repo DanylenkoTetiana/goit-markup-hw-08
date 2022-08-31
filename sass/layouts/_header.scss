@@ -1,17 +1,33 @@
 .header {
-  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
 
-  @include tablet {
+  .header__container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 480px) {
+      height: 60px;
+    }
   }
 }
+.header__menu-open {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  border: none;
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: var(--praimery-bkg-color);
+  @include tablet {
+    display: none;
+  }
+}
+.header__icon-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
