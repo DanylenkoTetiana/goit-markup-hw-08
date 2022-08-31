@@ -72,7 +72,6 @@
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
-  display: flex;
   align-items: center;
   height: 24px;
 
@@ -86,7 +85,9 @@
 }
 
 .order-form__quadrate {
-  display: flex;
+  position: relative;
+  top: 2px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -103,7 +104,6 @@
 }
 
 .order-form__link {
-  margin-left: 4px;
   text-decoration: underline;
   color: var(--accent-color);
 }
